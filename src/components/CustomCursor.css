@@ -1,0 +1,31 @@
+.custom-cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    pointer-events: none;
+    z-index: 9999;
+  }
+  
+  .outer-circle,
+  .inner-circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+  }
+  
+  .outer-circle {
+    width: 40px;
+    height: 40px;
+    border: 2px solid white;
+  }
+  
+  .inner-circle {
+    width: 10px;
+    height: 10px;
+    background-color: white;
+  }
+  

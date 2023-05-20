@@ -1,26 +1,14 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import CustomCursor from './components/CustomCursorModel';
+import './App.css'
 
-function App() {
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{backgroundColor: '#3d3d3d', height: '100vh',  margin: -8, display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+      <h1 style={{color: 'white', fontFamily: 'Arial'}}>Conteudo da página</h1>
+      <CustomCursor innerColor="white" outerColor="transparent" />
     </div>
   );
-}
+};
 
 export default App;
